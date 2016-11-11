@@ -1,0 +1,436 @@
+    /**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+    
+    @import 'https://fonts.googleapis.com/css?family=Gabriela|Rajdhani';
+    * {
+        padding: 0px;
+        margin: 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+    }
+    
+    html {
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: 'Rajdhani', 'Arial', sans-serif;
+    }
+    /*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+    
+    h1 {
+        font: bold 4.136rem 'Gabriela', 'Times New Roman', serif;
+        color: white;
+    }
+    
+    h2 {
+        font: bold 2.518rem 'Gabriela', 'Times New Roman', serif;
+        padding: 20px 0;
+        color: green;
+    }
+    
+    li,
+    p,
+    a {
+        font: normal 1.680 rem 'Rajdhani', 'Arial', sans-serif;
+        word-wrap: break-word;
+    }
+    
+    pre,
+    code,
+    kbd {
+        font: normal 1.0rem 'Rajdhani', 'Arial', sans-serif;
+    }
+    /***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+    
+    .wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    header {
+        width: 100%;
+    }
+    
+    .masthead {
+        background-image: url('https://unsplash.it/900/900?image=82');
+    }
+    
+    nav {
+        width: 100%;
+        padding-top: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    nav>ul {
+        width: 100%;
+    }
+    
+    nav li {
+        width: 100%;
+        list-style: none;
+        border: 2px solid blueviolet;
+        padding-top: 20px;
+        background-color: #fdc0f1;
+    }
+    
+    nav a,
+    nav a:link,
+    nav a:visited {
+        display: block;
+        font: bold 1.518rem 'Rajdhani', 'Arial', sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    nav a:active,
+    nav a:focus,
+    nav a:hover {
+        color: white;
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    
+    .col {
+        float: none;
+        width: 100%;
+    }
+    
+    .col img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        background-color: azure;
+        float: left;
+		margin: 0px 15px;
+    }
+    
+    footer {
+        padding-top: 20px;
+        width: 100%;
+    }
+    /* MEDIUM LAYOUT */
+    
+    @media screen and (min-width:600px) and (max-width: 800px) {
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: 'Rajdhani', 'Arial', sans-serif;
+        }
+        h1 {
+            font: bold 4.136rem 'Gabriela', 'Times New Roman', serif;
+            color: white;
+        }
+        h2 {
+            font: bold 2.318rem 'Gabriela', 'Times New Roman', serif;
+            padding: 20px 0;
+        }
+        li,
+        p,
+        a {
+            font: normal 1.618rem 'Rajdhani', 'Arial', sans-serif;
+            word-wrap: break-word;
+        }
+        pre,
+        code,
+        kbd {
+            font: normal 1.0rem 'Rajdhani', 'Arial', sans-serif;
+        }
+        .wrapper {
+            width: 100%;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+        }
+        .masthead {
+            background-image: url('https://unsplash.it/900/900?image=82');
+        }
+        nav {
+            width: 90%;
+            padding-top: 20px;
+        }
+        nav ul.mainnav {
+            margin: 0 auto;
+            text-align: center;
+        }
+        nav li {
+            list-style: none;
+           
+            padding-top: 20px;
+            background-color: #fdc0f1;
+            text-align: center;
+            display: inline;
+        }
+        nav a,
+        nav a:link,
+        nav a:visited {
+            display: inline;
+            font: bold 1.618rem 'Rajdhani', 'Arial', sans-serif;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:active,
+        nav a:focus,
+        nav a:hover {
+            color: white;
+        }
+        main {
+            width: 90%;
+            margin: 0 auto;
+        }
+		section.col.first {
+	    padding-right: 15px; 
+		}
+        .col {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .col.first {
+            float: left;
+        }
+        .col img {
+            width: 60%;
+            height: auto;
+            background-color: azure;
+            float: left;
+            max-width: 100%;
+            background-color: azure;
+			margin: 0px 15px;
+        }
+        footer {
+            padding-top: 20px;
+            width: 90%;
+            clear: both;
+        }
+        footer ul li {
+            display: inline;
+        }
+    }
+    /* LARGE LAYOUT */
+    
+    @media screen and (min-width: 800px) and (max-width: 1200px) {
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: 'Rajdhani', 'Arial', sans-serif;
+        }
+        h1 {
+            font: bold 4.136rem 'Gabriela', 'Times New Roman', serif;
+            color: white;
+        }
+        h2 {
+            font: bold 2.518rem 'Gabriela', 'Times New Roman', serif;
+            padding: 20px 0;
+        }
+        li,
+        p,
+        a {
+            font: normal 1.418rem 'Rajdhani', 'Arial', sans-serif;
+            word-wrap: break-word;
+        }
+        pre,
+        code,
+        kbd {
+            font: normal 1.0rem 'R ajdhani', 'Arial', sans-serif;
+        }
+        .wrapper {
+            width: 100%;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+        }
+        .masthead {
+            background-image: url('https://unsplash.it/900/900?image=82');
+        }
+        nav {
+            width: 90%;
+            padding-top: 20px;
+        }
+        nav ul.mainnav {
+            margin: 0 auto;
+            text-align: center;
+        }
+        nav li {
+            list-style: none;
+            border: 2px solid blueviolet;
+            padding-top: 20px;
+            background-color: #fdc0f1;
+            text-align: center;
+            display: inline;
+        }
+        nav a,
+        nav a:link,
+        nav a:visited {
+            font: bold 1.218rem 'Rajdhani', 'Arial', sans-serif;
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+        }
+        nav a:active,
+        nav a:focus,
+        nav a:hover {
+            color: white;
+        }
+        main {
+            width: 90%;
+            margin: 0 auto;
+        }
+		section.col.first {
+	    padding-right: 15px; 
+		}
+        .col {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .col.first {
+            float: left;
+        }
+        .col img {
+            width: 50%;
+            height: auto;
+            background-color: azure;
+            float: left;
+            max-width: 100%;
+			margin: 0px 15px;
+        }
+        footer {
+            padding-top: 20px;
+            width: 100%;
+            clear: both;
+        }
+        footer ul li {
+            display: inline;
+        }
+    }
+    /* EXTRA LARGE LAYOUT */
+    
+    @media screen and (min-width: 1200px) {
+        html {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: 'Rajdhani', 'Arial', sans-serif;
+        }
+        h1 {
+            font: bold 4.136rem 'Gabriela', 'Times New Roman', serif;
+            color: white;
+        }
+        h2 {
+            font: bold 2.318rem 'Gabriela', 'Times New Roman', serif;
+            padding: 20px 0;
+        }
+        li,
+        p,
+        a {
+            font: normal 1.318rem 'Rajdhani', 'Arial', sans-serif;
+            word-wrap: break-word;
+        }
+        pre,
+        code,
+        kbd {
+            font: normal 1.0rem 'Rajdhani', 'Arial', sans-serif;
+        }
+        .wrapper {
+            width: 100%;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+        }
+        .masthead {
+            background-image: url('https://unsplash.it/900/900?image=82');
+        }
+        nav {
+            width: 30%;
+            padding-top: 20px;
+            float: left;
+        }
+        nav ul.mainnav {
+            margin: 0 auto;
+            text-align: center;
+        }
+        nav li {
+            width: 100%;
+            list-style: none;
+            border: 2px solid blueviolet;
+            padding-top: 20px;
+            background-color: #fdc0f1;
+            text-align: center;
+            display: block;
+        }
+        nav a,
+        nav a:link,
+        nav a:visited {
+            font: bold 1.418rem 'Rajdhani', 'Arial', sans-serif;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:active,
+        nav a:focus,
+        nav a:hover {
+            color: white;
+        }
+        main {
+            width: 70%;
+            margin: 0 auto;
+            float: right;
+        }
+		section.col.first {
+	    padding-right: 15px; 
+		}
+        .col {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .col.first {
+            float: left;
+        }
+        .col img {
+            width: 55%;
+            height: auto;
+            background-color: azure;
+            float: left;
+            max-width: 100%;
+			margin: 0px 15px;
+        }
+        footer {
+            padding-top: 20px;
+            width: 100%;
+            clear: both;
+        }
+        footer ul li {
+            display: inline;
+        }
+    }
